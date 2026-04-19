@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - WeWork Consulting</title>
+    <meta name="description" content="Découvrez nos services en planification stratégique, excellence opérationnelle, transformation digitale et capital humain.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-hero {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.9)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 0 4rem;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+        .service-icon {
+            color: var(--primary-light);
+            background: var(--bg-alt);
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .service-list {
+            margin: 1.5rem 0 2rem;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+            flex-grow: 1;
+        }
+        .service-list li {
+            position: relative;
+            margin-bottom: 0.5rem;
+            list-style: disc;
+        }
+        /* Custom layout for services below the hero */
+        .services-wrapper {
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                WeWork Consulting
+            </a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À Propos</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="case-studies.html" class="nav-link">Études de Cas</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Réserver une Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="service-hero">
+            <div class="container">
+                <h1 style="color: white;">Nos Services</h1>
+                <p style="color: #E2E8F0; font-size: 1.25rem; max-width: 800px; margin-bottom: 2rem;">Transformer votre entreprise grâce à des connaissances stratégiques et à l'excellence opérationnelle. Découvrez comment notre expertise peut stimuler votre croissance.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="section section-bg pt-0">
+            <div class="container services-wrapper">
+                <div class="grid grid-cols-2">
+                    
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="flex align-center gap-4 mb-4">
+                            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></div>
+                            <h2 style="margin:0; font-size: 1.5rem; color: var(--primary);">Planification Stratégique</h2>
+                        </div>
+                        <p style="color: var(--text-main); font-weight: 500;">Définissez vos objectifs à long terme et les étapes concrètes pour une croissance durable.</p>
+                        <ul class="service-list">
+                            <li>Analyse de marché et prévisions</li>
+                            <li>Développement de stratégies de croissance</li>
+                            <li>Soutien M&A et Due Diligence</li>
+                        </ul>
+                        <div>
+                            <a href="contact.html" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="flex align-center gap-4 mb-4">
+                            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+                            <h2 style="margin:0; font-size: 1.5rem; color: var(--primary);">Excellence Opérationnelle</h2>
+                        </div>
+                        <p style="color: var(--text-main); font-weight: 500;">Optimisez vos processus pour améliorer l'efficacité et réduire les coûts.</p>
+                        <ul class="service-list">
+                            <li>Réingénierie des processus</li>
+                            <li>Gestion de la chaîne d'approvisionnement</li>
+                            <li>Mise en œuvre Lean et Six Sigma</li>
+                        </ul>
+                        <div>
+                            <a href="contact.html" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="flex align-center gap-4 mb-4">
+                            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg></div>
+                            <h2 style="margin:0; font-size: 1.5rem; color: var(--primary);">Transformation Digitale</h2>
+                        </div>
+                        <p style="color: var(--text-main); font-weight: 500;">Tirez parti de la technologie pour innover et garder une longueur d'avance à l'ère numérique.</p>
+                        <ul class="service-list">
+                            <li>Services de migration vers le cloud</li>
+                            <li>Analyses de données et IA</li>
+                            <li>Solutions de cybersécurité</li>
+                        </ul>
+                        <div>
+                            <a href="contact.html" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="flex align-center gap-4 mb-4">
+                            <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                            <h2 style="margin:0; font-size: 1.5rem; color: var(--primary);">Capital Humain</h2>
+                        </div>
+                        <p style="color: var(--text-main); font-weight: 500;">Libérez tout le potentiel de vos effectifs grâce à des solutions RH sur mesure.</p>
+                        <ul class="service-list">
+                            <li>Acquisition de talents</li>
+                            <li>Développement du leadership</li>
+                            <li>Design organisationnel</li>
+                        </ul>
+                        <div>
+                            <a href="contact.html" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">En savoir plus</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-heading flex align-center gap-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        WeWork Consulting
+                    </h4>
+                    <p style="color: #94A3B8; margin-bottom: 1rem; max-width: 300px;">Cabinet de conseil stratégique pour la transformation numérique et la croissance.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">À Propos</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Liens Utiles</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Études de cas</a></li>
+                        <li><a href="#">Blog & Actualités</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><span style="color: #94A3B8;">+216 99 60 69 69</span></li>
+                        <li><span style="color: #94A3B8;">contact@wework-consulting.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WeWork Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

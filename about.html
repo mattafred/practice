@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - WeWork Consulting</title>
+    <meta name="description" content="À propos de nous - Construire l'avenir ensemble grâce à une stratégie experte et à l'innovation.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header { background-color: var(--bg-subtle); padding: 4rem 0; text-align: center; border-bottom: 1px solid var(--bg-alt); }
+        .page-header h1 { color: var(--text-main); margin-bottom: 1rem; font-size: 2.5rem; }
+        .timeline { display: flex; justify-content: space-between; position: relative; margin: 4rem 0; padding: 0; list-style: none; }
+        .timeline::before { content: ''; position: absolute; top: 24px; left: 0; right: 0; height: 2px; background-color: #CBD5E1; z-index: 1; }
+        .timeline-item { position: relative; z-index: 2; flex: 1; text-align: center; padding: 0 1rem; }
+        .timeline-icon { width: 48px; height: 48px; background-color: white; border: 2px solid var(--secondary); border-radius: 50%; margin: 0 auto 1rem auto; display: flex; align-items: center; justify-content: center; color: var(--secondary); }
+        .timeline-year { font-weight: 700; color: var(--primary); font-size: 1.125rem; }
+        .timeline-desc { font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem; }
+        
+        .team-card { background: white; border: 1px solid var(--bg-alt); border-radius: var(--radius-md); overflow: hidden; transition: var(--transition-normal); }
+        .team-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .team-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+        .team-info { padding: 1.25rem; }
+        .team-name { font-weight: 700; font-size: 1.125rem; color: var(--text-main); }
+        .team-role { color: var(--primary-light); font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem; }
+        
+        .value-card { text-align: center; padding: 2rem; }
+        .value-icon { width: 64px; height: 64px; background-color: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                WeWork Consulting
+            </a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link active">À Propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="case-studies.html" class="nav-link">Études de Cas</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Réserver une Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>À Propos de Nous</h1>
+                <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">Construire l'avenir ensemble grâce à une stratégie experte et à l'innovation.</p>
+            </div>
+        </section>
+
+        <!-- Notre Histoire -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">Notre Histoire</h2>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-desc">Fondée par Jane Doe et John Smith</div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-desc">Extension à la région EMEA</div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg></div>
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-desc">Lancement de la pratique de Transformation Digitale</div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"></path></svg></div>
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-desc">Célébration de plus de 500 Réussites Clients</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Équipe de Direction -->
+        <section class="section section-bg">
+            <div class="container text-center">
+                <h2>Équipe de Direction</h2>
+                <div class="grid grid-cols-4 mt-8" style="gap: 1.5rem;">
+                    <!-- Membre 1 -->
+                    <div class="team-card text-left">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Habib Kolsi" class="team-img">
+                        <div class="team-info">
+                            <h3 class="team-name">Habib Kolsi</h3>
+                            <div class="team-role">Co-fondateur</div>
+                            <p style="font-size: 0.8rem; margin: 0;">Expert en conseil stratégique et transformation des entreprises.</p>
+                        </div>
+                    </div>
+                    <!-- Membre 2 -->
+                    <div class="team-card text-left">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Omar Akrout" class="team-img">
+                        <div class="team-info">
+                            <h3 class="team-name">Omar Akrout</h3>
+                            <div class="team-role">Co-fondateur</div>
+                            <p style="font-size: 0.8rem; margin: 0;">Spécialiste en innovation technologique et solutions cloud.</p>
+                        </div>
+                    </div>
+                    <!-- Membre 3 -->
+                    <div class="team-card text-left">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Jane Doe" class="team-img">
+                        <div class="team-info">
+                            <h3 class="team-name">Jane Doe</h3>
+                            <div class="team-role">CEO</div>
+                            <p style="font-size: 0.8rem; margin: 0;">Visionnaire et stratège pour les opérations à l'international.</p>
+                        </div>
+                    </div>
+                    <!-- Membre 4 -->
+                    <div class="team-card text-left">
+                        <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="John Smith" class="team-img">
+                        <div class="team-info">
+                            <h3 class="team-name">John Smith</h3>
+                            <div class="team-role">COO</div>
+                            <p style="font-size: 0.8rem; margin: 0;">Supervision de l'excellence opérationnelle et de l'efficacité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos Valeurs -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">Nos Valeurs</h2>
+                <div class="grid grid-cols-3 mt-8">
+                    <div class="value-card">
+                        <div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                        <h3 class="card-title">Intégrité</h3>
+                        <p>Transparence et professionnalisme dans toutes nos relations.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></div>
+                        <h3 class="card-title">Innovation</h3>
+                        <p>Agilité et innovation au cœur de nos solutions.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 12l-4-4-4 4"></path><path d="M12 16V8"></path></svg></div>
+                        <h3 class="card-title">Impact</h3>
+                        <p>Une personnalisation pour un résultat concret et mesurable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-heading flex align-center gap-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        WeWork Consulting
+                    </h4>
+                    <p style="color: #94A3B8; margin-bottom: 1rem; max-width: 300px;">Cabinet de conseil stratégique pour la transformation numérique et la croissance.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">À Propos</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Liens Utiles</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Études de cas</a></li>
+                        <li><a href="#">Blog & Actualités</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><span style="color: #94A3B8;">+216 99 60 69 69</span></li>
+                        <li><span style="color: #94A3B8;">contact@wework-consulting.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WeWork Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

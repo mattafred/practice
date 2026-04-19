@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Études de Cas - WeWork Consulting</title>
+    <meta name="description" content="Découvrez comment nous avons stimulé l'impact et la croissance pour nos clients à travers nos études de cas.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header { background-color: var(--bg-subtle); padding: 4rem 0 2rem; border-bottom: 1px solid var(--bg-alt); }
+        .page-header h1 { color: var(--text-main); margin-bottom: 1rem; font-size: 2.5rem; }
+        
+        .filters { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+        .filters select { padding: 0.5rem 1rem; border-radius: var(--radius-md); border: 1px solid #CBD5E1; font-family: var(--font-main); outline: none; cursor: pointer; }
+        .clear-filters { color: var(--primary-light); background: none; border: none; cursor: pointer; text-decoration: underline; font-size: 0.875rem; }
+        
+        .case-study-card {
+            background: white; border: 1px solid var(--bg-alt); border-radius: var(--radius-md); overflow: hidden;
+            display: flex; flex-direction: column; transition: var(--transition-normal); height: 100%;
+        }
+        .case-study-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+        .cs-img { width: 100%; height: 200px; object-fit: cover; }
+        .cs-content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .cs-tag { display: inline-block; background-color: #E0E7FF; color: var(--primary-dark); font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: var(--radius-full); margin-bottom: 1rem; align-self: flex-start; }
+        .cs-title { font-size: 1.25rem; color: var(--text-main); margin-bottom: 0.75rem; font-weight: 700; line-height: 1.3; }
+        .cs-desc { color: var(--text-muted); font-size: 0.875rem; flex-grow: 1; margin-bottom: 1.5rem; }
+        .cs-link { color: var(--primary-light); font-weight: 500; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; border-top: 1px solid var(--bg-alt); padding-top: 1rem; margin-top: auto; }
+        .cs-link:hover { color: var(--primary-dark); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                WeWork Consulting
+            </a>
+            <button class="nav-toggle" id="navToggle">☰</button>
+            <ul class="navbar-nav" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">À Propos</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="case-studies.html" class="nav-link active">Études de Cas</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Réserver une Consultation</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Études de Cas</h1>
+                <p style="font-size: 1.25rem; max-width: 600px;">Découvrez comment nous avons stimulé l'impact et la croissance pour nos clients.</p>
+                
+                <div class="filters">
+                    <span style="font-weight: 500; font-size: 0.875rem;">Filtrer par :</span>
+                    <select class="filter-select">
+                        <option value="all">Industrie</option>
+                        <option value="fintech">Fintech</option>
+                        <option value="sante">Santé</option>
+                        <option value="retail">Commerce de détail</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="all">Type de Service</option>
+                        <option value="tech">Tech</option>
+                        <option value="ops">Opérations</option>
+                        <option value="strat">Stratégie</option>
+                    </select>
+                    <button class="clear-filters">Effacer les filtres</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Listing -->
+        <section class="section section-bg">
+            <div class="container">
+                <div class="grid grid-cols-3">
+                    <!-- Cas 1 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fintech" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Fintech</span>
+                            <h3 class="cs-title">Transformation numérique pour une banque mondiale</h3>
+                            <p class="cs-desc">Augmentation de 30% de l'efficacité opérationnelle grâce à la migration vers le cloud.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                    <!-- Cas 2 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Santé" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Santé</span>
+                            <h3 class="cs-title">Optimisation des soins aux patients avec l'IA</h3>
+                            <p class="cs-desc">Réduction des temps d'attente de 25% et amélioration des résultats.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                    <!-- Cas 3 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1586528116311-ad8ed74514f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Commerce de détail" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Commerce de détail</span>
+                            <h3 class="cs-title">Modernisation de la chaîne d'approvisionnement</h3>
+                            <p class="cs-desc">Augmentation de 40% de la rotation des stocks et réduction des coûts.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                    <!-- Cas 4 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Technologie" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Technologie</span>
+                            <h3 class="cs-title">Refonte de la sécurité d'entreprise</h3>
+                            <p class="cs-desc">Amélioration de la détection des menaces, prévention de 99% des attaques.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                    <!-- Cas 5 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Industrie manufacturière" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Industrie manufacturière</span>
+                            <h3 class="cs-title">Intégration IoT pour une usine</h3>
+                            <p class="cs-desc">Augmentation de 20% du débit de production grâce à la surveillance en temps réel.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                    <!-- Cas 6 -->
+                    <div class="case-study-card">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Énergie" class="cs-img">
+                        <div class="cs-content">
+                            <span class="cs-tag">Énergie</span>
+                            <h3 class="cs-title">Stratégie de croissance durable</h3>
+                            <p class="cs-desc">Réduction de 15% de l'empreinte carbone et des coûts opérationnels.</p>
+                            <a href="#" class="cs-link">Lire l'étude de cas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4 class="footer-heading flex align-center gap-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        WeWork Consulting
+                    </h4>
+                    <p style="color: #94A3B8; margin-bottom: 1rem; max-width: 300px;">Cabinet de conseil stratégique pour la transformation numérique et la croissance.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">À Propos</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Notre Histoire</a></li>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Liens Utiles</h4>
+                    <ul class="footer-links">
+                        <li><a href="case-studies.html">Études de cas</a></li>
+                        <li><a href="#">Blog & Actualités</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><span style="color: #94A3B8;">+216 99 60 69 69</span></li>
+                        <li><span style="color: #94A3B8;">contact@wework-consulting.com</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 WeWork Consulting. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
